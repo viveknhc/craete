@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+
+
+  <title>Create Architecture Studio</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+
+    <div class="preloader__progress">
+      <div class="preloader__progress__inner"></div>
+      <img src="img/general/logo.jpg" alt="preloader image" class="preloader__img">
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
+
+
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+
+
+    <main class="main-content  ">
+
+
+      <!-- header start -->
+      <header class="header  js-header">
+        <div class="header__bar  js-header-bar">
+
+          <div class="row justify-content-between align-items-center">
+
+            <div class="col-auto z-5 js-header-item">
+              <div class="header__item -margin-sm">
+                <div class="header__logo text-white js-header-logo">
+                  
+                    <!-- <i class="icon icon-logo"></i> -->
+
+                    <div class="logo-area">
+                      <a data-barba href="index-2.html">
+                        <img src="img/general/logo.jpg" alt="" style="max-height: 60px;">
+                      </a>
+                   
+                    </div>
+                 
+                </div>
+              </div>
+            </div>
+
+
+            <div class="menu js-menu ">
+              <div class="mobile__background js-mobile-bg"></div>
+
+              <div class="menu__container">
+                <div class="mobile__back js-nav-list-back pointer-events-none">
+                  <a data-barba href="#">Home</a>
+                </div>
+
+                <ul class="nav js-navList ">
+                  <li class="text-white">
+                    <a data-barba href="index.html">Home</a>
+                  </li>
+                  <li class="text-white">
+                    <a data-barba href="about-us.html">About us</a>
+                  </li>
+              
+                  <li class="text-white">
+                    <a data-barba href="">Service</a>
+                  </li>
+                 <li class="text-white">
+                    <a data-barba href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="text-white">
+                    <a data-barba href="#">Client</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mobile__footer js-mobile-footer">
+                <div class="mobile__socials">
+                  <a data-barba href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a data-barba href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a data-barba href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a data-barba href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+                <div class="mobile__copyright">
+                  <img src="img/general/logo-light.svg" alt="logo" class="icon">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-auto z-5 sm:pos-unset js-header-item">
+              <div class="header__icons ">
+
+
+ 
+
+                <div class="header__menu">
+                  <button type="button" class="nav-button-open md:d-none js-sidebar-open">
+                    <i class="icon text-white icon-menu"></i>
+                  </button>
+
+                  <button type="button" class="nav-button-open d-none md:d-block js-nav-open">
+                    <i class="icon text-white icon-menu"></i>
+                  </button>
+
+                  <button type="button" class="nav-button-close d-none md:d-block pointer-events-none js-nav-close">
+                    <i class="icon text-white icon-cross"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      
+        </div>
+      </header>
+      <!-- header end -->
+
+
+      <div class="content-wrapper  js-content-wrapper">
+        <aside class="sidebar js-sidebar">
+          <div class="sidebar__cross">
+            <button class="button js-sidebar-close">
+              <i class="icon icon-cross"></i>
+            </button>
+          </div>
+
+          <div class="sidebar__header">
+            <div class="sidebar__logo">
+              <img src="img/general/logo.svg" alt="helix logo">
+            </div>
+
+            <h4 class="title">CREATE </h4>
+            <p class="subtitle">Architecture Studio and Construction</p>
+          </div>
+
+          <div class="sidebar__instagram">
+            
+
+            <div class="instagram">
+
+              <a data-barba href="#" class="instagram__item">
+                <div class="instagram__image">
+                  <div class="ratio ratio-1:1 bg-image js-lazy" data-bg="img/main-sidebar/instagram/1.jpg"></div>
+                </div>
+
+                <div class="instagram__content">
+                  <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
+
+              <a data-barba href="#" class="instagram__item">
+                <div class="instagram__image">
+                  <div class="ratio ratio-1:1 bg-image js-lazy" data-bg="img/main-sidebar/instagram/2.jpg"></div>
+                </div>
+
+                <div class="instagram__content">
+                  <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
+
+              <a data-barba href="#" class="instagram__item">
+                <div class="instagram__image">
+                  <div class="ratio ratio-1:1 bg-image js-lazy" data-bg="img/main-sidebar/instagram/3.jpg"></div>
+                </div>
+
+                <div class="instagram__content">
+                  <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
+
+              <a data-barba href="#" class="instagram__item">
+                <div class="instagram__image">
+                  <div class="ratio ratio-1:1 bg-image js-lazy" data-bg="img/main-sidebar/instagram/4.jpg"></div>
+                </div>
+
+                <div class="instagram__content">
+                  <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
+
+              <a data-barba href="#" class="instagram__item">
+                <div class="instagram__image">
+                  <div class="ratio ratio-1:1 bg-image js-lazy" data-bg="img/main-sidebar/instagram/5.jpg"></div>
+                </div>
+
+                <div class="instagram__content">
+                  <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
+
+              <a data-barba href="#" class="instagram__item">
+                <div class="instagram__image">
+                  <div class="ratio ratio-1:1 bg-image js-lazy" data-bg="img/main-sidebar/instagram/6.jpg"></div>
+                </div>
+
+                <div class="instagram__content">
+                  <i class="icon fa fa-instagram" aria-hidden="true"></i>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="sidebar__info">
+            <h5 class="title">Let's Start a Project</h5>
+            <p class="text">
+              9567921909<br>
+              christyjohnt@gmail.com
+            </p>
+            <p class="text">
+              
+ARK Complex
+kanhirangad PO 
+Thaliparamba
+Kannur<br>670142
+            </p>
+
+            <button class="button -simple">GET DIRECTIONS</button>
+          </div>
+
+          <div class="sidebar__socials">
+            <div class="item">
+              <a data-barba href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="item">
+              <a data-barba href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="item">
+              <a data-barba href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="item">
+              <a data-barba href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+
+        <!-- masthead -->
+        <section class="masthead swiper-container js-slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div data-parallax="0.6" class="masthead__image" data-swiper-parallax="40%">
+                <img data-parallax-target class="swiper-lazy" src="img/main-sliders/home-1/1.jpg" alt="Slider image">
+              </div>
+
+              <div class="container-fluid h-100 px-32">
+                <div class="row align-items-center">
+                  <div class="col-lg-10 offset-lg-2 offset-md-1">
+                    <div class="masthead__content js-content">
+                      <div data-split="lines" data-anim="split-lines" class="js-title-wrap">
+                        <h1 class="masthead__title text-white js-title">
+                          The House of The<br><span>Narrative Art</span>
+                        </h1>
+                      </div>
+                      <div class="masthead__button js-button">
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div data-parallax="0.6" class="masthead__image" data-swiper-parallax="40%">
+                <img data-parallax-target class="swiper-lazy" src="img/main-sliders/home-1/4.jpg" alt="Slider image">
+              </div>
+
+              <div class="container-fluid h-100 px-32">
+                <div class="row align-items-center">
+                  <div class="col-lg-10 offset-lg-2 offset-md-1">
+                    <div class="masthead__content js-content">
+                      <div data-split="lines" class="js-title-wrap">
+                        <h1 class="masthead__title text-white js-title">
+                          Construct Your<br><span>Dream</span> 
+                        </h1>
+                      </div>
+                      <div class="masthead__button js-button">
+                        <a data-barba href="#" class="button -simple text-white">
+                          VIEW PROJECT
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div data-parallax="0.6" class="masthead__image" data-swiper-parallax="40%">
+                <img data-parallax-target class="swiper-lazy" src="img/main-sliders/home-1/10.jpg" alt="Slider image">
+              </div>
+
+              <div class="container-fluid h-100 px-32">
+                <div class="row align-items-center">
+                  <div class="col-lg-10 offset-lg-2 offset-md-1">
+                    <div class="masthead__content js-content">
+                      <div data-split="lines" class="js-title-wrap">
+                        <h1 class="masthead__title text-white js-title">
+                          Re Future<br><span>Your Life</span>
+                        </h1>
+                      </div>
+                      <div class="masthead__button js-button">
+                        <a data-barba href="#projects" class="button -simple text-white">
+                          VIEW PROJECT
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="masthead__pagination_numbers js-pag-numbers lg:d-none">
+            <span class="js-current"></span>
+            <span>/</span>
+            <span class="js-all"></span>
+          </div>
+
+        
+
+          <div class="masthead-pagination js-pag">
+            <div data-cursor class="masthead-pagination__item is-active js-pag-item">
+              <span class="masthead-pagination__number">01</span>
+              <h4 class="masthead-pagination__title md:d-none">The House of The<br>Narrative Art</h4>
+              <span class="masthead-pagination__line"></span>
+            </div>
+
+            <div data-cursor class="masthead-pagination__item js-pag-item">
+              <span class="masthead-pagination__number">02</span>
+              <h4 class="masthead-pagination__title md:d-none">Construct Your <br>Dream</h4>
+              <span class="masthead-pagination__line"></span>
+            </div>
+
+            <div data-cursor class="masthead-pagination__item js-pag-item">
+              <span class="masthead-pagination__number">03</span>
+              <h4 class="masthead-pagination__title md:d-none">Re Future<br>your life</h4>
+              <span class="masthead-pagination__line"></span>
+            </div>
+          </div>
+
+          <div class="masthead__scroll js-scroll md:d-none">
+            <div class="masthead__scroll_item">
+              Scroll
+              <div class="masthead__scroll_icon">
+                <i class="icon icon-right-arrow"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- about -->
+        <section class="layout-pt-lg overflow-visible z-2" id="about">
+          <div class="container">
+            <div data-anim-wrap class="row align-items-center">
+              <div class="col-xl-5 col-lg-6 col-md-10">
+                <div class="aboutBack sm:d-none">
+                  <img src="img/general/large-logo.svg" alt="logo">
+                </div>
+
+                <div data-anim-child="slide-right delay-8" class="sectionHeading -left-line -about pr-12 lg:pr-0">
+                  <span class="sectionHeading__subtitle">OUR STORY</span>
+                  <h2 class="sectionHeading__title">Welcome To Create Architecture & Construction</h2>
+                  <p class="sectionHeading__text">The basic philosophy of our studio is to create individual, aesthetically stunning solutions for our customers by lightning-fast development of projects employing unique styles and architecture. Even if you don’t have a ready sketch of what you want – we will help you to get the result you dreamed of.</p>
+
+                  <div class="sectionHeading__button">
+                    <a data-barba href="#" class="button -md -dark text-white">DISCOVER MORE</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-7 col-lg-6">
+                <div class="overlayImgs md:mt-60">
+                  <div data-anim-child="img-right cover-black" class="overlayImgs__back">
+                    <img src="img/backgrounds/7.jpg" alt="Image">
+                  </div>
+
+                  <div data-anim-child="img-right cover-black delay-3" class="overlayImgs__front -border">
+                    <img src="img/backgrounds/2.jpg" alt="Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- counter -->
+        <section class="layout-pt-md layout-pb-md bg-grey pattern_bg_1">
+          <div class="container">
+            <div class="row justify-content-between md:pt-48">
+
+              <div class="col-lg-auto col-md-6">
+                <div class="counter">
+                  <div class="counter__back">
+                    532
+                  </div>
+
+                  <div class="counter__content">
+                    <div class="counter__number text-black">532</div>
+                    <h5 class="counter__title text-black">happy<br>Clients</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-6">
+                <div class="counter">
+                  <div class="counter__back">
+                    48
+                  </div>
+
+                  <div class="counter__content">
+                    <div class="counter__number text-black">48</div>
+                    <h5 class="counter__title text-black">Years of<br>Experience</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-6">
+                <div class="counter">
+                  <div class="counter__back">
+                    76
+                  </div>
+
+                  <div class="counter__content">
+                    <div class="counter__number text-black">76</div>
+                    <h5 class="counter__title text-black">Awards<br>Winning</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-6">
+                <div class="counter">
+                  <div class="counter__back">
+                    19
+                  </div>
+
+                  <div class="counter__content">
+                    <div class="counter__number text-black">19</div>
+                    <h5 class="counter__title text-black">Office<br>Worldwide</h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="relative layout-pt-lg layout-pb-lg">
+          <div class="section-bg-image col-lg-6 px-0">
+            <div class="bg-image js-lazy" data-bg="img/backgrounds/4.jpg"></div>
+          </div>
+
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-4 col-lg-5 offset-lg-7">
+                <div class="sectionHeading -left-line">
+                  <span class="sectionHeading__subtitle">EXPLORE THE FEATURES</span>
+                  <h2 class="sectionHeading__title mt-16">PROFESSIONAL EXPERTISE
+                  </h2>
+                  <p class="sectionHeading__text mt-24" style="color: black;">Create Architecture Studio and Construction is outfitted with imported cutting-edge gear that is regularly upgraded to match new building trends. Work on each project is scheduled according to the date agreed to the client depending on the site's state. Project managers, quality controllers, supervisors, and skilled labourers in each step deliver the required results on time.
+                    We are able to achieve our ambitious goal of providing quality structures at inexpensive prices throughout Kerala because of professionalism and collaboration. The valuable input of professionals in each division, together with methodical effort and coordination across departments, contributes to the success of each project performed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- services -->
+        <section class="layout-pt-lg layout-pb-lg">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="sectionHeading -top-line text-center">
+                  <span class="sectionHeading__subtitle">WHAT CAN WE OFFER</span>
+                  <h2 class="sectionHeading__title">Our Services</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row y-gap-32 layout-pt-sm">
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-pencil text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Engineering</h3>
+                   
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-rocket text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Civil Construction</h3>
+    
+
+                   
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-cube text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Electrical HT & EHT Installation</h3>
+       
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-idea text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Technical Training</h3>
+                   
+
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row y-gap-32 layout-pt-sm">
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-pencil text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Personnel Certification</h3>
+                   
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-rocket text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Technical Manpower Supply</h3>
+                    
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-cube text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Interior designs</h3>
+                   
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div data-anim="slide-up" class="service -card -hover">
+                  <div class="service__content -border">
+                    <div class="service__icon">
+                      <i class="icon icon-idea text-beige"></i>
+                    </div>
+
+                    <h3 class="service__title mt-20">Architectural Design</h3>
+                   
+
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- portfolio -->
+        <section class="layout-pb-lg" id="projects">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="sectionHeading -left-line">
+                  <span class="sectionHeading__subtitle">PROJECTS</span>
+                  <h2 class="sectionHeading__title">Featured Works</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center layout-pt-sm">
+              <div class="col-lg-8">
+                <div class="sectionSlider js-sectionSlider" data-gap="30" data-slider-col="base-1 lg-1 md-1 sm-1" data-center data-loop data-pagination data-cursor data-cursor-label="DRAG">
+
+                  <div class="sliderNav -portfolio-slider js-nav">
+                    <button class="sliderNav__item -prev js-prev">PREV</button>
+                    <button class="sliderNav__item -next js-next">NEXT</button>
+                  </div>
+
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <a data-barba data-cursor data-cursor-label="DRAG" href="#" class="portfolio">
+                        <div class="portfolio__image">
+                          <div class="ratio ratio-16:9">
+                            <img class="ratio-img swiper-lazy" src="#" data-src="img/portfolio/wide/project1.jpeg" alt="project image">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a data-barba data-cursor data-cursor-label="DRAG" href="#" class="portfolio">
+                        <div class="portfolio__image">
+                          <div class="ratio ratio-16:9">
+                            <img class="ratio-img swiper-lazy" src="#" data-src="img/portfolio/wide/project2.jpeg" alt="project image">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a data-barba data-cursor data-cursor-label="DRAG" href="#" class="portfolio">
+                        <div class="portfolio__image">
+                          <div class="ratio ratio-16:9">
+                            <img class="ratio-img swiper-lazy" src="#" data-src="img/portfolio/wide/project3.jpeg" alt="project image">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+
+                       
+                      </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a data-barba data-cursor data-cursor-label="DRAG" href="#" class="portfolio">
+                        <div class="portfolio__image">
+                          <div class="ratio ratio-16:9">
+                            <img class="ratio-img swiper-lazy" src="#" data-src="img/portfolio/wide/project4.jpeg" alt="project image">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+
+                        
+                      </a>
+                    </div>
+
+                  </div>
+
+                  <div class="pagination -slider mt-48 js-pagination"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="relative layout-pt-lg layout-pb-lg">
+          <div class="section-bg-image col-lg-6  px-0">
+            <div class="bg-image js-lazy " data-bg="img/backgrounds/9.jpg"></div>
+          </div>
+
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-xl-4  col-lg-5 offset-lg-7">
+                <div class="sectionHeading -left-line" style="color: black;">
+                  <h2 class="sectionHeading__title mt-16">OUR CLIENTS
+                  </h2>
+                  <p class="sectionHeading__text mt-24">
+
+                    <dt>⦁	Project: C/O Building for Centre for Science In Society at CUSAT, Kalamaserry                                                        
+                        <dd>
+                            Client: Central Public Work Department (Cpwd)
+                        </dd>
+                    </dt>
+                    <dt>⦁	Project: Construction of AMENITY Centre for KUFOS, Panangad                                                         
+                      <dd>
+                        Client: Bharath Sanchar Nigham Ltd (BSNL)
+                      </dd>
+                  </dt>
+
+                  
+                  <dt>⦁	Construction of AMENITY Centre for KUFOS, panangad                                                         
+                    <dd>
+                      Client: Bharath Sanchar Nigham Ltd (Bsnl) 
+                    </dd>
+                </dt>
+
+                <dt>⦁	Construction Of Under Ground Water Tank                                                 
+                  <dd>
+                    Client: Hindustan Latex Ltd
+                  </dd>
+              </dt>
+              <dt>⦁	Extension work of section office at 48MW PORINGALKUTH
+                                                
+                <dd>
+                  Client: Kerala State Electricity Board
+                </dd>
+            </dt>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <!-- blog -->
+        <section class="layout-pt-lg layout-pb-lg bg-beige-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-auto">
+                <div class="sectionHeading -left-line">
+                  <span class="sectionHeading__subtitle"></span>
+                  <h2 class="sectionHeading__title">Testimonials</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row y-gap-32 layout-pt-sm">
+
+              <div class="col-lg-4 col-md-6">
+                <div data-anim-wrap class="blog -hover">
+                  <a data-barba href="#">
+                    <div class="blog__image">
+                      <div data-anim-child="img-right cover-black">
+                        <div>
+                          <div class="ratio ratio-41:35">
+                            <img class="ratio-img" src="img/blog/1.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="blog__category">Priya</div>
+                    </div>
+                  </a>
+
+                  <div class="blog__content mt-20">
+                  
+
+                    <div data-anim-child="slide-up delay-7">
+                      <a data-barba href="#">
+                        <h3 class="blog__title text-black pr-80 lg:pr-0">"" It was an absolute pleasure working with Rose Architecture. Zach was very professional and great to work with! They exceeded my expectations and will definitely be working with them again in the future. Highly recommend !! "</h3>
+                      </a>
+                    </div>
+
+                   
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div data-anim-wrap class="blog -hover">
+                  <a data-barba href="#">
+                    <div class="blog__image">
+                      <div data-anim-child="img-right cover-black">
+                        <div>
+                          <div class="ratio ratio-41:35">
+                            <img class="ratio-img" src="img/blog/2.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="blog__category">Amal</div>
+                    </div>
+                  </a>
+
+                  <div class="blog__content mt-20">
+                  
+
+                    <div data-anim-child="slide-up delay-7">
+                      <a data-barba href="#">
+                        <h3 class="blog__title text-black pr-80 lg:pr-0">" We are very happy with the finished result and credit Mark with seeing the potential that we would never have seen ourselves "</h3>
+                      </a>
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div data-anim-wrap class="blog -hover">
+                  <a data-barba href="#">
+                    <div class="blog__image">
+                      <div data-anim-child="img-right cover-black">
+                        <div>
+                          <div class="ratio ratio-41:35">
+                            <img class="ratio-img" src="img/blog/3.jpg" alt="blog image">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="blog__category">Vinod</div>
+                    </div>
+                  </a>
+
+                  <div class="blog__content mt-20">
+                   
+
+                    <div data-anim-child="slide-up delay-7">
+                      <a data-barba href="#">
+                        <h3 class="blog__title text-black pr-80 lg:pr-0">" We are stoked with the place, really enjoying it! Copping plenty of compliments on the design and the layout "</h3>
+                      </a>
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- clients
+        <section class="layout-pt-md layout-pb-md">
+          <div class="container">
+            <div class="row y-gap-32 justify-content-between align-items-center">
+
+              <div class="col-lg-auto col-md-auto col-6">
+                <div class="clients">
+                  <div class="clients__image">
+                    <img src="img/clients/1.png" alt="clients image">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-auto col-6">
+                <div class="clients">
+                  <div class="clients__image">
+                    <img src="img/clients/2.png" alt="clients image">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-auto col-6">
+                <div class="clients">
+                  <div class="clients__image">
+                    <img src="img/clients/3.png" alt="clients image">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-auto col-6">
+                <div class="clients">
+                  <div class="clients__image">
+                    <img src="img/clients/4.png" alt="clients image">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-auto col-6">
+                <div class="clients">
+                  <div class="clients__image">
+                    <img src="img/clients/5.png" alt="clients image">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-auto col-md-auto col-6">
+                <div class="clients">
+                  <div class="clients__image">
+                    <img src="img/clients/6.png" alt="clients image">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section> -->
+
+
+        <footer class="footer -type-1">
+
+          <div class="footer__top">
+            <div class="container">
+              <div class="row y-gap-48 justify-content-between">
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">Contact</h3>
+
+                    <div class="footer__content pr-20">
+                      <div class="footer__content__item">
+                        <p><span>T:</span> 9567921909</p>
+                        <p><span>M:</span> christyjohnt@gmail.com</p>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <p><span>A:</span> ARK Complex
+                          kanhirangad PO
+                          Thaliparamba
+                          Kannur-670142</p>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#" class="button -simple text-white">GET DIRECTIONS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">OUR SERVICES</h3>
+
+                    <div class="footer__content">
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Engineering</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Civil Construction</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Electrical HT & EHT Installation</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Technical Training</a>
+                      </div>
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Personnel Certification</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Technical Manpower Supply</a>
+                      </div>
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Interior designs</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Architectural Design</a>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">USEFUL LINKS</h3>
+
+                    <div class="footer__content">
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Project</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">News</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">About</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Contact Us</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Shop</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">FAQ</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Privacy Policy</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">SUBSCRIBE</h3>
+
+                    <div class="footer__content">
+                      <div class="footer__content__item">
+                        <p>We will send you updates on new products and discounts.</p>
+                      </div>
+
+                      <div class="footer__newsletter">
+                        <form action="https://creativelayers.net/themes/hellix-html/POST">
+                          <input placeholder="Your Email" type="email">
+
+                          <button type="submit">
+                            <i class="icon icon-send"></i>
+                          </button>
+                        </form>
+                      </div>
+
+                      <div class="footer__socials">
+                        <h3 class="footer__title text-white">FOLLOW US</h3>
+
+                        <div class="footer__socials_content">
+                          <a data-barba href="#" class="text-white">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a data-barba href="#" class="text-white">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a data-barba href="#" class="text-white">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                          <a data-barba href="#" class="text-white">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="row align-items-center justify-content-between sm:justify-content-start">
+                <div class="col-auto sm:order-2">
+                  <div class="footer__bottom_text">© 2022 Create Architecture. All rights reserved. Designed By Gedexo</div>
+                </div>
+
+              
+              
+              </div>
+            </div>
+          </div>
+
+
+          <div data-cursor class="backButton js-backButton">
+            <div class="nav -slider">
+              <div class="nav__item -left">
+                <i class="icon icon-right-arrow"></i>
+              </div>
+            </div>
+          </div>
+
+        </footer>
+
+
+      </div>
+    </main>
+  </div>
+
+  <a href="https://wa.me/9567921909" class="whatsapplink">
+    <img src="img/call/whatsapp.png" alt="" class="whatsapp">
+  </a>
+
+  <a href="tel:+91 9567921909" class="calllink">
+    <img src="img/call/telephone.png"  alt="" class="call">
+  </a>
+  <!-- barba container end -->
+
+
+  <!-- JavaScript -->
+  <script src="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
