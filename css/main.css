@@ -3661,6 +3661,10 @@ h6 {
   color: var(--secondary-color);
 }
 
+.text-beige:hover {
+  color: #D7926B;
+}
+
 .text-beige {
   color: #D7926B;
 }
@@ -4879,12 +4883,15 @@ h6 {
 
 .service.-card.-hover:hover .service__icon {
   background-color: #D7926B !important;
+ 
 }
 
 .service.-card.-hover:hover .service__icon .icon {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
 }
-
+.service.-card.-hover:hover .service__icon .fa {
+  color: rgb(255, 255, 255) !important;
+}
 .service.-card.-hover:hover .service__title {
   color: white !important;
 }
