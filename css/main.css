@@ -2808,13 +2808,7 @@ h6 {
     display: none !important;
   }
 
-  .menu .mobile__footer {
-    display: none !important;
-  }
-
-  .menu .mobile__socials {
-    display: none !important;
-  }
+  
 
   .menu .mobile__copyright {
     display: none !important;
@@ -20532,7 +20526,7 @@ ul.list li {
   display: block;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .expertise {
     color: #18130c;
     background-image: linear-gradient(#ffffdb82, white);
@@ -20543,7 +20537,7 @@ ul.list li {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
 .client {
   color: #18130c;
   background-image: linear-gradient(#ffffdb82, white);

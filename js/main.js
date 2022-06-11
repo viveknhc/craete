@@ -2118,7 +2118,7 @@ const Header = (function() {
   function updateVars() {
     menu = document.querySelector('.js-menu');
     mobileBg = menu.querySelector('.js-mobile-bg');
-    mobileFooter = menu.querySelector('.js-mobile-footer');
+    // mobileFooter = menu.querySelector('.js-mobile-footer');
     navList = document.querySelector('.js-navList');
     navListLinks = document.querySelectorAll('.js-navList > li > a');
 
