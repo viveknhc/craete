@@ -20517,12 +20517,7 @@ ul.list li {
 }
 
 .calllink {
-  position: fixed;
-  z-index: 9;
-  bottom: 92px;
-  right: 16px;
-  display: block;
-  bottom: 47px;
+
 }
 
 .whatsapplink {
